@@ -64,7 +64,8 @@ height: 438px;
 
 }
 .banner-img{
-    transition: transform 2s;
+    transition: transform ;
+    transition-duration: 4s; 
 }
 .banner-section:hover .banner-img{
     transform: scale( 1.3);
@@ -223,4 +224,13 @@ Footer section
    /* ----------------Media Queries------------ */
 
    /* ---------Mobile Devices-------- */
-
+@media only screen and (max-width:688px)
+    {
+    .banner-section{
+        
+        flex-direction: column;
+    }
+    .banner-title{
+        font-size: 36px;
+    }
+}
